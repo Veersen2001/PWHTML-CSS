@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent child and grouping</title>
+</head>
+<body>
+    <!-- parent-child 
+    div>ul>li-->
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- Adding sibling
+    div>p+p -->
+    <div>
+        <P></P>
+        <P></P>
+    </div>
+
+    <!-- multiplication -->
+    <!-- ul>li*5-->
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- grouping
+    div>(nav>ul>li*2>a)+footer+p -->
+    <div>
+        <nav>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </nav>
+        <footer></footer>
+        <p></p>
+    </div>
+
+    <!-- div>div>div>(section>div>div>ul>li*10>a[href=#])+(nav>div>div>ul>li*5>a)+footer -->
+
+    <div>
+        <div>
+            <div>
+                <section>
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <nav>
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <footer></footer>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
