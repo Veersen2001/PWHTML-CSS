@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hover:hover{
+            background-color: red;
+            color: white;
+        }
+
+    /* input:focus{
+        color: red;
+        background-color: black;
+        font-size: 20px;
+    }
+    a:active{
+        background-color: red;
+
+    }
+    a:visited{
+        color: black;
+    } */
+    a:first-child{
+        background-color: yellow;
+    }
+    p:nth-child(2n){
+        background-color: green;
+    }
+    /* this braket gives 1,2 and so on and even and odd also 2n+1,n-2...,.. */
+
+    </style>
+</head>
+<body>
+    <!-- Pseudo Class use width : -->
+    <!-- 1.Hover-button and link -->
+     <p class="hover">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+     
+     <!-- 2.Focus-input -->
+     <input type="text">
+     
+     <!--3.active and visited-->
+     <!-- active work when will click -->
+     <a href="google.com">Google</a>
+     <!-- visited -->
+     <!--  we had visited this link then visited work-->
+
+        
+     <!-- 4.first-child -->
+     <nav>
+        <!-- this is first child of nav -->
+        <a href="google.com">google</a>
+     </nav>
+
+
+     <!-- 5.nth-child-->
+     <nav>
+        <!-- this is nth-child of nav  and nav is parent-->
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        
+     </nav>
+
+
+
+</body>
+</html>

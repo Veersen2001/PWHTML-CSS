@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .width{
+            /* all content inside witdh */
+            width: 200px;
+            border: 1px solid red;
+        }
+        .min-width{
+            background-color: #808080;
+            /* min-width: 800px; */
+            display: inline-block;
+            /* inline-block change width and height without inline block can not change */
+            max-width: 400px;
+        }
+
+        .height{
+            border: 1px solid green;
+            /* height: 50px; */
+            color: blueviolet;
+            max-height: 100px;
+            overflow: hidden;
+        }
+        .boxsize{
+           width: 200px;
+           height: 200px;
+           margin: auto;
+            border: 1px solid red;
+        }
+
+        
+    </style>
+</head>
+<body>
+     <!-- min-width and max width -->
+    <p class="min-width">Lorem ng elit. Itaque, vero.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, saepe. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates earum rerum architecto voluptatum eveniet dolore! Perspiciatis nostrum quae, veritatis natus maxime adipisci officia at, qui aperiam fugiat, quisquam saepe quibusdam?</p>
+    <!-- width -->
+    <p class="width">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eius! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae blanditiis harum omnis maxime ab, exercitationem alias fugiat iste modi dolorem repellendus error esse autem quia! Autem quibusdam recusandae sapiente expedita? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, earum?</p>
+    <!-- height -->
+    <p class="height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nisi atque minus beatae sit doloribus tempora odio impedit ducimus, hic cupiditate praesentium reiciendis ipsam quisquam. Voluptate mollitia minus voluptates nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, aliquid!</p>
+    <!-- box-sizing -->
+    <p class="boxsize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, vero!</p>
+</body>
+</html>

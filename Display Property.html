@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        .inline{
+        /*  <p>- show in one line */
+        display: inline;
+        width: 160px;
+        /* here width can not work */
+      }
+       span{
+        /*show inline to block */
+        display: block;
+    
+        
+      } 
+      .in-blck{
+        color: red;
+        /* in inline-block, we can take height and width */
+        display: inline-block;
+        width: 160px;
+
+      }
+      .hidden{
+        display: none;
+      }
+
+    </style>
+</head>
+<body>
+    <!-- Display property- we cna change default behaviour -->
+
+    <!--  p  by default block -->
+    <!-- Inline-In one line both <p> -->
+    <p class="inline">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, assumenda!</p>
+    <p class="inline">Lorem ipsum dolor sit amet.</p>
+    <hr>
+
+    <!-- span by default inline -->
+     <span class="span">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+     <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+<hr>
+
+     <!-- inline-block = we take width-->
+     <p class="in-blck">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+     <p class="in-blck">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+
+     <!-- dispaly-none-->
+     <p class="hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, eveniet.</p>
+</body>
+</html>
