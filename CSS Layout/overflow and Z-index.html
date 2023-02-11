@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 300px;
+            height: 300px;
+            border: 2px solid red;
+            /* overflow:hidden ; */
+            /* overflow: scroll; */
+            /* overflow-y: scroll; */
+            
+        }
+        .one{
+            height: 50px;
+            width: 50px;
+            background: #66c012;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+        .two{
+            height: 50px;
+            width: 50px;
+            background-color: #ba1212;
+            position: absolute;
+            top:40px;
+            z-index: -2;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- overflow -->
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum obcaecati velit enim praesentium cupiditate beatae, ducimus iure ipsam porro fugiat ad quibusdam dolor a provident eius </p> 
+
+    <!-- z-index -->
+    <div class="one"></div>
+    <div class="two"></div>
+
+</body>
+</html>

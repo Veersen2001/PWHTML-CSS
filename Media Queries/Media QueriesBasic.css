@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(11, 77, 159);
+}
+div{
+    font-size: x-large;
+    text-align: center;
+    color: antiquewhite;
+}
+
+div::after{
+  content: "default";   
+}
+/* @media (max-width:400px) {
+  /* 400 or less than 400px 
+  body{
+    background-color: darkgreen;
+    color: red;
+  }
+  div::after
+  {
+    content: '400px';
+  }
+  
+}
+@media (min-width:700px) {
+  
+  body{
+    background-color: black;
+    color: white;
+  }
+  div::after{
+    content: "700px";
+
+  }
+  
+}
+@media (min-width:900px) {
+  /* if viewport is atleast 900px  or more than 900px
+  body{
+    background-color: blueviolet;
+    color: white;
+  }
+  div::after{
+    content:"900px";
+  }
+  
+} */
+
+@media ( 400px <= width <= 700px) {
+  /* it works between 400 to 700px */
+  body{
+    background-color: black;
+    color: white;
+  }
+  div::after{
+    content:'small device';
+
+  }
+  
+}
+
+
+@media (min-width: 760px) and (max-width: 1000px) {
+  /* it works between 400 to 700px */
+  body{
+    background-color: rgb(146, 20, 20);
+    color: rgb(13, 39, 168);
+  }
+  div::after{
+    content:'large device';
+
+  }
+  
+}
+

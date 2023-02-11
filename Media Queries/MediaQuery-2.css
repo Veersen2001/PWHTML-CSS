@@ -1,0 +1,68 @@
+div{
+    font-size: x-large;
+    text-align: center;
+}
+@media  (max-width:600px) {/*0 to 600px */
+    /* small phones */
+    body{
+        background: #000;
+        color: white;
+
+    }
+    div::after{
+        content: 'smaller phone';
+    }
+}
+
+ @media  (min-width:600px) { /*600 to 768px */
+    /* tablet and big phones */
+    body{
+        background: #d60c0c;
+        color: white;
+
+    }
+    div::after{
+        content: 'Tablet and big phone';
+    }
+}
+
+@media  (min-width:768px) { /*768 to 992px */
+    /* tablet   */
+    body{
+        background: #0cd64c;
+        color: white;
+
+    }
+    div::after{
+        content: 'Tablet';
+    }
+}
+
+@media  (min-width:992px) { /*992px to 1200px */
+    /* Laptop and desktop */
+    body{
+        background: #0527a1;
+        color: white;
+
+    }
+    div::after{
+        content: 'Laptop or desktop';
+    }
+}
+
+@media  (min-width:1200px) { /*1200px to beyond */
+    /* Laptop and desktop */
+    body{
+        background: #05a170;
+        color: white;
+
+    }
+    div::after{
+        content: 'Larger Screen';
+    }
+}
+
+
+
+
+
