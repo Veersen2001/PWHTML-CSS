@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .tran{
+            height: 300px;
+            width: 500px;
+            background-color:blueviolet;
+            transition: width 2s, height 3s,font-size 3s,background-color 1s;
+            /* trasition:property time */
+
+
+            /* transition-timing-function: ease-out; */
+            /* it uses smoothness of time we can not analyze */
+
+
+            transition-delay: 2s;
+            /* it performs action after time delay */
+
+        }
+
+        div:hover{
+            width: 900px;
+            height: 900px;
+            font-size: 90px;
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <!-- Transitions use smoothness and smooth hover effect -->
+
+    <div class="tran"> hello world</div>
+</body>
+</html>

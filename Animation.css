@@ -1,0 +1,71 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: colorchange;
+    animation-duration: 7s;
+    animation-delay: 2s;
+    position: relative;
+    /* change relative  */
+    animation-iteration-count: 2;
+    /* animation 3 times moves */
+
+    /* animation-direction: reverse; */
+    /* change animation direction */
+
+    animation-fill-mode: both;
+    /* set 100% keyframe*/
+
+
+}
+
+#ease{
+    animation-timing-function: ease;
+}
+
+#linear{
+    animation-timing-function:linear;
+}
+
+#ease-in{
+    animation-timing-function: ease-in;
+}
+
+#ease-in-out{
+    animation-timing-function: ease-in-out;
+}
+@keyframes colorchange {
+    /* start to end */
+    /* divede 10 s duration */
+    from{
+        background-color: blue;
+        top: 0;
+        left: 0;
+
+    
+    }
+    25%{
+        background-color: black;
+        top: 0;
+        left: 200px;
+    }
+    50%{
+        background-color: blueviolet;
+        top:200px;
+        left: 200px;
+    }
+    75%{
+        background:blue;
+        top: 200px;
+        right: 0px;
+
+    }
+    100%{
+        background:greenyellow;
+        top: 0;
+        left: 0;
+    }
+
+    
+   
+}
