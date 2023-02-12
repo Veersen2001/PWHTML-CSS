@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: green;
+            display: grid;
+            grid-template-columns: repeat(2,500px);
+            grid-template-rows:100px
+            600px 100px;
+            overflow: hidden;
+           width: 1000px;
+           text-align: center;
+          
+
+        }
+        .header{
+          background-color: pink;
+          grid-column-start: 1;  
+          grid-column-end: 3;
+         
+          
+
+        }
+    .aside{
+        background:rgb(228, 93, 93);
+        grid-row-start:2 ;
+        grid-row-end: 3;
+
+    }
+    .sec{
+        background-color:rgb(223, 226, 17);
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: end; 
+        justify-items: center;
+        
+
+    }
+    .img{
+        background-color: grey;
+        height: 100px;
+        width: 100px;   
+    }
+    .footer{
+        background-color: #3c13a4;
+       grid-column-end: 1;
+       grid-column-start: 3;
+       
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="aside">aside</div>
+        <div class="sec">
+            <div class="img">img1</div>
+            <div class="img">img2</div>
+            <div class="img">img3</div>
+            
+        </div>
+        <div class="footer">footer<div>
+    </div>
+</body>
+</html>

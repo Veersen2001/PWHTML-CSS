@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            height: 1000px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,250px);
+            background-color: blueviolet;
+        }
+        
+        .box1{
+            background-color: red;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .box2{
+            background-color: rgb(23, 4, 16);
+        }
+        .box3{
+            background-color: rgb(212, 255, 0);
+        }
+        .box4{
+            background-color: #00ff00;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .box5{
+            background-color: rgb(0, 136, 255);
+        }
+        .box6{
+            background-color: rgb(69, 199, 25);
+        }
+        .box7{
+            background-color: rgb(255, 0, 204);
+        }
+        .box8{
+            background-color: rgb(47, 0, 255);
+        }
+        .box9{
+            background-color: rgb(190, 12, 110);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Grid Album  -->
+    <din class="container">
+        <div class="box box1">img1</div>
+        <div class="box box2">img2</div>
+        <div class="box box3">img3</div>
+        <div class="box box4">img4</div>
+        <div class="box box5">img5</div>
+        <div class="box box6">img6</div>
+        <div class="box box7">img7</div>
+        <div class="box box8">img8</div>
+        <div class="box box9">img9</div>
+    </din>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💒Flexbox</title>
+    <style>
+
+    /* flex works only rows or coloum  but can not both so introduced grid  */
+  /* target of parent or container */
+     .cont{
+        /* flex- conatain complete witdh or block */
+        /* display: flex;
+        border: 2px solid black; */
+
+
+        /* inline-flex  it contain needed requerment*/
+        /* display: inline-flex;
+        border: 2px solid black; */
+
+
+        /* flex-direction */
+        display: flex;
+        border: 2px solid black;
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+
+
+        /* flex-wrap */
+        /* work acording to size or responsive*/
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+
+       /* justify content */
+       /* justify-content: center; */
+       /* justify-content: end; */
+       /* justify-content: space-between; */
+
+
+       /* align-items */
+       /* height: 160px; */
+       /* align-items: flex-end; */
+       /* text-align:center;
+       justify-content: center; */
+
+       /* gap */
+         height: 160px;
+         gap: 19px;
+
+     }   
+    .box{
+         height: 50px;
+        width: 50px; 
+        
+       }
+       .box1{
+        background: #f10909;
+       }
+
+       .box2{
+        background: #d6f109;
+       }
+
+       .box3{
+        background: #2c09f1;
+       }
+    </style>
+</head>
+<body>
+    <!-- Flexbox  is one dimensional and work top down and left-righ-->
+    <!-- x-axis is called main Axis /left-right
+    y-axis is called cross axis/top-bottom-->
+    <!-- parent is must important in flexbox -->
+    
+    <div class="cont">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        
+    </div>
+
+</body>
+</html> 

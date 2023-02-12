@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+        
+            /* grid-template-columns: 500px 500px 500px; */
+            /* specify  number of columns,here given three coloumns */
+
+            /* grid-template-columns: 1fr 1fr 2fr; */
+            grid-template-columns: repeat(3,1fr);
+
+            /* grid-template-rows:1fr 1fr 1fr ; */
+            /* Note:difine height of each rows */
+            
+            grid-template-rows: 600px 100px 70px  100px 100px  100px;
+
+            /* gap: 10px; */
+            /* gap between row and column */
+
+           column-gap: 10px;
+
+           row-gap: 10px;
+
+
+
+
+
+        }
+        .box{
+           /* if we have given width and hight then grid works but not show */
+             /* height: 100px;
+            width: 100px; */
+            border: 2px solid rgb(0, 221, 255);
+         
+            
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: yellow;
+        }
+        .box3{
+            background-color: rgb(62, 10, 206);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Grid layout is two dimensional Layout -->
+    <div class="container">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        
+        
+    </div>
+</body>
+</html>
